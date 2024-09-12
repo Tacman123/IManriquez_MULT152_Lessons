@@ -5,12 +5,19 @@ using UnityEngine;
 public class PlayerRotation : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Vector2 turn;
+    void Start()
+    {
+        
+    }
 
     // Update is called once per frame
     void Update()
     {
-        turn.x += Input.GetAxis("Mouse X");
-        transform.localRotation = Quaternion.Euler(0, turn.x, 0);
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+        Vector2 direction = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
+
+        transform.up = direction;
     }
 }
