@@ -2,15 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerRotation : MonoBehaviour
+public class Smoke_life : MonoBehaviour
 {
+    public float lifetime = 1f; 
+
     // Start is called before the first frame update
-    public Vector2 turn;
+    void Start()
+    {
+        
+    }
 
     // Update is called once per frame
     void Update()
     {
-        turn.x += Input.GetAxis("Mouse X");
-        transform.localRotation = Quaternion.Euler(0, turn.x * 10, 0);
+        
     }
 }
