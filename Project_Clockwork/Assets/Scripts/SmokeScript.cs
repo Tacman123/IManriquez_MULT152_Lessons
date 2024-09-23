@@ -10,7 +10,7 @@ public class SmokeScript : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("Lift", 3f, 3f);
+        InvokeRepeating("Lift", .5f, .5f);
     }
 
     // Update is called once per frame

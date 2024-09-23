@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Smoke_life : MonoBehaviour
 {
-    public float lifetime = 1f; 
+    public float life = 1.5f;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        Destroy(gameObject, life);
     }
 
     // Update is called once per frame
