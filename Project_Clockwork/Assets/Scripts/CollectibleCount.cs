@@ -6,12 +6,12 @@ using System;
 
 public class CollectibleCount : MonoBehaviour
 {
-    public TMP_Text text;
+    private TMP_Text text;
     int count;
 
     void Awake()
     {
-        
+        text = GetComponent<TMP_Text>();
     }
 
     void OnEnable() => Collectible.OnCollected += OnCollectibleCollected;
