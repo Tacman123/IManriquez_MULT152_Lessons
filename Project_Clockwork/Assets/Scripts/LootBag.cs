@@ -29,10 +29,9 @@ public class LootBag : MonoBehaviour
     public void InstantiateLoot(Vector3 spawnPosition)
     {
         Loot droppedItem = GetDroppedItem();
-        if(droppedItem != null)
+        if (droppedItem != null)
         {
             GameObject lootGameObject = Instantiate(droppedItemPrefab, spawnPosition, Quaternion.identity);
-            lootGameObject.GetComponent<MeshRenderer>().material = droppedItem.lootObject;
+            lootGameObject.GetComponent<MeshRenderer>().material = droppedItem.lootObject.GetComponent<MeshRenderer>().material;
         }
     }
-}
