@@ -15,7 +15,10 @@ public class Projectile : MonoBehaviour
     {
         if (collision.collider.CompareTag("Enemy"))
         {
+            GetComponent<LootBag>().InstantiateLoot(transform.position);
             Destroy(collision.gameObject);
         }
+        else if (collision.collider.CompareTag("DestructibleWall"))
+            Destroy(collision.gameObject);
     }
 }

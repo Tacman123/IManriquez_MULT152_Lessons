@@ -14,11 +14,19 @@ public class CollectibleCount : MonoBehaviour
         text = GetComponent<TMP_Text>();
     }
 
+    void Start() => UpdateCount();
+
     void OnEnable() => Collectible.OnCollected += OnCollectibleCollected;
     void OnDisable() => Collectible.OnCollected -= OnCollectibleCollected;
 
     void OnCollectibleCollected()
     {
-        text.text = (++count).ToString();
+        count++;
+        UpdateCount();
+    }
+
+    void UpdateCount()
+    {
+        text.text = $"{count}";
     }
 }
