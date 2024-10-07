@@ -24,12 +24,12 @@ public class HealthBar : MonoBehaviour
         int heartsToMake = (int)((playerHealth.maxHealth / 2) + maxHealthRemainder);
         for(int i = 0; i < heartsToMake; i++)
         {
-            CreateEmptyHeart();
+            CreateEmptyHeart(); // make total hearts needed
         }
 
         for(int i = 0; i < hearts.Count; i++)
         {
-            int heartStatusRemainder = (int)Mathf.Clamp(playerHealth.Health - (i * 4), 0, 10);
+            int heartStatusRemainder = (int)Mathf.Clamp(playerHealth.Health - (i * 4), 0, 4);
             hearts[i].SetHeartImage((HeartStatus)heartStatusRemainder);
         }
 

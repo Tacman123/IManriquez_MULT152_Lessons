@@ -1593,7 +1593,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh39710
+  m_Name: pb_Mesh24332
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1810,7 +1810,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23805,8 +23805,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d26a9ad628e2e2c49a43c9bce1a5269c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  droppedItemPrefab: {fileID: 0}
-  lootList: []
+  droppedItemPrefab: {fileID: 7574536087792004494, guid: 993080a6b07683e4b9c1a16e4f2923ef, type: 3}
+  lootList:
+  - {fileID: 11400000, guid: 8f654c07c8363e647bec100d051517ad, type: 2}
+  - {fileID: 11400000, guid: 6b8beff8676158b469465c97715e5c3a, type: 2}
 --- !u!43 &499202433
 Mesh:
   m_ObjectHideFlags: 0
@@ -52024,8 +52026,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac2173520049254a953bf472245517f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
-  Health: 1
+  maxHealth: 10
+  Health: 20
   healthBar: {fileID: 0}
 --- !u!114 &1423870155
 MonoBehaviour:
@@ -79818,6 +79820,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6534208078753579080, guid: 0af81f890fed4d04097aca8e88e486d2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6534208078753579083, guid: 0af81f890fed4d04097aca8e88e486d2, type: 3}
       propertyPath: m_Name
       value: Cog

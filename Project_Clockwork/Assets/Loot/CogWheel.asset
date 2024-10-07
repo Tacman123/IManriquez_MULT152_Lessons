@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootObject: {fileID: 6534208078753579083, guid: 0af81f890fed4d04097aca8e88e486d2, type: 3}
   lootName: Gears
-  dropChance: 30
+  dropChance: 80
