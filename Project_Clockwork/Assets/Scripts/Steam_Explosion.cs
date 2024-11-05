@@ -9,7 +9,7 @@ public class Steam_Explosion : MonoBehaviour
     public float radius = 5f;
     public float force = 700f;
 
-    public GameObject explosionEffect; 
+    public GameObject explosionEffect;    
 
     float countdown;
     public bool hasExploded = false;
@@ -19,6 +19,8 @@ public class Steam_Explosion : MonoBehaviour
     void Start()
     {
         countdown = delay;
+
+        
     }
 
     // Update is called once per frame
@@ -34,7 +36,6 @@ public class Steam_Explosion : MonoBehaviour
         void Explode ()
         {
             Instantiate(explosionEffect, transform.position, transform.rotation);
-
 
             Collider[] collidersToDestroy = Physics.OverlapSphere(transform.position, radius);
 
