@@ -6,10 +6,10 @@ public class LimitCamera : MonoBehaviour
 {
     public GameObject Player;
 
-    public float minX = -30f; 
-    public float maxX = 30f; 
-    public float minZ = -30f; 
-    public float maxZ = 30f;
+    private float minX = -30f; 
+    private float maxX = 30f; 
+    private float minZ = -30f; 
+    private float maxZ = 30f;
     private void LateUpdate()
     {
         Vector3 playerPosition = Player.transform.position;
