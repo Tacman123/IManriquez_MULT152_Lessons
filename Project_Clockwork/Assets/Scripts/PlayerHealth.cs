@@ -1,40 +1,39 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float maxHealth = 8f;
-    public float Health;
-    public Image healthBar;
+    public static event Action OnPlayerDamaged;
+    public static event Action OnPlayerDeath;
+
+    public float health, maxHealth;
 
     void Start()
     {
-        Health = maxHealth;
-        UpdateHealthBar();
+        health = maxHealth;        
     }
 
     public void TakeDamage(float damage)
     {
-        Health -= damage;
-        if (Health < 0)
+        health -= damage;
+        OnPlayerDamaged?.Invoke();
+
+        if (health <= 0)
         {
-            Health = 0;
+            health = 0;
+            Debug.Log("You're Dead!");
+            OnPlayerDeath?.Invoke();
         }
-        UpdateHealthBar();
     }
 
     public void Heal(float amount)
     {
-        Health += amount;
-        if (Health > maxHealth)
+        health += amount;
+        if (health > maxHealth)
         {
-            Health = maxHealth;
+            health = maxHealth;
         }
-        UpdateHealthBar();
-    }
-
-    void UpdateHealthBar()
-    {
-        healthBar.fillAmount = Health / maxHealth;
-    }
+    }    
 }

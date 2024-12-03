@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Title Screen.unity
+    guid: 19348ddc5bf9a5d45aa90ff08a13e417
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: ea33ddf4a87e35846919be4af22f74ad
+  - enabled: 1
+    path: Assets/Scenes/Gearsburg Town Square.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

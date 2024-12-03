@@ -8,6 +8,16 @@ public class HealthBar : MonoBehaviour
     public PlayerHealth playerHealth;
     List<HealthHearts> hearts = new List<HealthHearts>();
 
+    private void OnEnable()
+    {
+        PlayerHealth.OnPlayerDamaged += DrawHearts;
+    }
+
+    private void OnDisable()
+    {
+        PlayerHealth.OnPlayerDamaged -= DrawHearts;
+    }
+
     private void Start()
     {
         DrawHearts();
@@ -20,7 +30,7 @@ public class HealthBar : MonoBehaviour
 
         // determine how many hearts to make total
         // based off the max health
-        float maxHealthRemainder = playerHealth.maxHealth % 2; 
+        float maxHealthRemainder = playerHealth.maxHealth % 2;
         int heartsToMake = (int)((playerHealth.maxHealth / 2) + maxHealthRemainder);
         for(int i = 0; i < heartsToMake; i++)
         {
@@ -29,7 +39,7 @@ public class HealthBar : MonoBehaviour
 
         for(int i = 0; i < hearts.Count; i++)
         {
-            int heartStatusRemainder = (int)Mathf.Clamp(playerHealth.Health - (i * 4), 0, 4);
+            int heartStatusRemainder = (int)Mathf.Clamp(playerHealth.health - (i * 4), 0, 4);
             hearts[i].SetHeartImage((HeartStatus)heartStatusRemainder);
         }
 

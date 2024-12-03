@@ -5,6 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float life = 1;
+    public int damage = 1; // Amount of damage the projectile deals
 
     void Awake()
     {
@@ -15,10 +16,8 @@ public class Projectile : MonoBehaviour
     {
         if (collision.collider.CompareTag("Enemy"))
         {
-            GetComponent<LootBag>().InstantiateLoot(transform.position);
-            Destroy(collision.gameObject);
+             // Destroy the projectile
+            Destroy(gameObject);
         }
-        else if (collision.collider.CompareTag("DestructibleWall"))
-            Destroy(collision.gameObject);
     }
 }

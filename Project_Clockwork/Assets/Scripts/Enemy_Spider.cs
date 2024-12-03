@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy_Spider : MonoBehaviour
 {
-    public float life = 1;
+    public float life = 6f;
 
     void Awake()
     {
@@ -15,10 +15,25 @@ public class Enemy_Spider : MonoBehaviour
     {
         if (collision.collider.CompareTag("Projectile"))
         {
-            
-            Destroy(collision.gameObject);
+
+            life -= 1;
         }
-        else if (collision.collider.CompareTag("DestructibleWall"))
-            Destroy(collision.gameObject);
+        else if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
+        }
+    }
+
+    private void Update()
+    {
+        if(life <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        GetComponent<LootBag>().InstantiateLoot(transform.position);
     }
 }
