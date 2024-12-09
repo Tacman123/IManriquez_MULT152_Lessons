@@ -1,7 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -9,17 +9,28 @@ public class PlayerMovement : MonoBehaviour
     public float rotationSpeed;
     public GameObject scoutBotPrefab;    
     public Transform ScoutspawnPoint;
-    public float possesionTime = 10.0f;
-    
+    public float possesionTime = 10.0f;    
+
     private CameraFollow followPlayerScript;
     private Animator animator;
     private CharacterController characterController;
     private GameObject scoutBot;    
     private bool isPossessing = false;
-    
+
+    private void OnEnable()
+    {
+        PlayerHealth.OnPlayerDeath += DisablePlayerMovement;
+
+    }
+
+    private void OnDisable()
+    {
+        PlayerHealth.OnPlayerDeath -= DisablePlayerMovement;
+    }
+
     // Start is called before the first frame update
     void Start()
-    {
+    {        
         animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
 
@@ -27,6 +38,8 @@ public class PlayerMovement : MonoBehaviour
         {
             followPlayerScript = Camera.main.GetComponent<CameraFollow>();
         }
+
+        EnablePlayerMovement();
     }
 
     // Update is called once per frame
@@ -91,5 +104,18 @@ public class PlayerMovement : MonoBehaviour
         animator.enabled = true;
         this.enabled = true;
         isPossessing = false;
+    }
+
+    public void DisablePlayerMovement()
+    {
+        animator.enabled = false;
+        characterController.enabled = false;
+        
+    }
+
+    public void EnablePlayerMovement()
+    {
+        animator.enabled = true;
+        characterController.enabled = true;
     }
 }

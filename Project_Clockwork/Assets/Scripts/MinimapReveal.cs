@@ -33,7 +33,7 @@ public class MinimapReveal : MonoBehaviour
         isRevealing = true;
         float fillAmount = minimapMask.fillAmount;
 
-        while (fillAmount > 0f)
+        while (fillAmount <= 1f)
         {
             fillAmount -= revealSpeed * Time.deltaTime;
             minimapMask.fillAmount = fillAmount;

@@ -31,7 +31,7 @@ public class HealthBar : MonoBehaviour
         // determine how many hearts to make total
         // based off the max health
         float maxHealthRemainder = playerHealth.maxHealth % 2;
-        int heartsToMake = (int)((playerHealth.maxHealth / 2) + maxHealthRemainder);
+        int heartsToMake = (int)((playerHealth.maxHealth / 4) + maxHealthRemainder);
         for(int i = 0; i < heartsToMake; i++)
         {
             CreateEmptyHeart(); // make total hearts needed

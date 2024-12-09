@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be619c9e68525a42aa6ff30884c77ef, type: 3}
   m_Name: CogWheel
   m_EditorClassIdentifier: 
-  lootObject: {fileID: 6534208078753579083, guid: 0af81f890fed4d04097aca8e88e486d2, type: 3}
+  lootObject: {fileID: 136786, guid: b09d1060515cb4b47bb28be46cee25c5, type: 3}
   lootName: Gears
-  dropChance: 80
+  dropChance: 50

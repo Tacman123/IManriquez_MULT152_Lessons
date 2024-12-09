@@ -12,14 +12,13 @@ public class LootBag : MonoBehaviour
         int randomNumber = Random.Range(1, 101); // 1-100
         List<Loot> possibleItems = new List<Loot>();
         foreach (Loot item in lootList)
-        {
-            Debug.Log(randomNumber+" , " + item.dropChance);
+        {            
             if (randomNumber <= item.dropChance)
             {
                 possibleItems.Add(item);
             }
         }
-        Debug.Log(possibleItems);
+        
 
         if (possibleItems.Count > 0)
         {
@@ -36,7 +35,7 @@ public class LootBag : MonoBehaviour
         {
             GameObject lootGameObject = Instantiate(droppedItem.lootObject, spawnPosition, Quaternion.identity);
             lootGameObject.GetComponent<MeshRenderer>().sharedMaterial = droppedItem.lootObject.GetComponent<MeshRenderer>().sharedMaterial;
-            Debug.Log("Item not null");
+            
         }
     }
 }

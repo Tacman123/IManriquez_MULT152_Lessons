@@ -23,7 +23,7 @@ public class Push : MonoBehaviour
     {
         Rigidbody rigidbody = hit.collider.attachedRigidbody;
 
-        if (rigidbody!= null)
+        if (rigidbody!= null && !CompareTag("Movable") && !CompareTag("TriggerObject"))
         {
             Vector3 forceDirection = hit.gameObject.transform.position - transform.position;
             forceDirection.y = 0;

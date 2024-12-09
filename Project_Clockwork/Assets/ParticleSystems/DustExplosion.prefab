@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 199791721206961466}
   - component: {fileID: 1724823476554873748}
   - component: {fileID: 4520439301610042150}
+  - component: {fileID: 1955825991706749813}
+  - component: {fileID: 4236724173080258487}
   m_Layer: 0
   m_Name: DustExplosion
   m_TagString: Untagged
@@ -4910,6 +4912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   steamExpl: {fileID: 8300000, guid: adafe0eda1dc35c4d8c20babb4eeb820, type: 3}
+  life: 2
 --- !u!82 &4520439301610042150
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4917,7 +4920,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1025285306637258}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -5006,6 +5009,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1955825991706749813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025285306637258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 337dd47bfab5ef040a89b7c77224fc92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 6
+  knockbackStrength: 10
+--- !u!135 &4236724173080258487
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025285306637258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1129888670383888
 GameObject:
   m_ObjectHideFlags: 0

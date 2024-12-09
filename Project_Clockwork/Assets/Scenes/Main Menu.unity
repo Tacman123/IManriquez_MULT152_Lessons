@@ -152,7 +152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5443743990395859139, guid: f222ea092d17250408c0a4e1936425f9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MainMenu, Assembly-CSharp
+      value: UIManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5443743990395859139, guid: f222ea092d17250408c0a4e1936425f9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -332,7 +332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5443743991762376639, guid: f222ea092d17250408c0a4e1936425f9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MainMenu, Assembly-CSharp
+      value: UIManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5443743991762376639, guid: f222ea092d17250408c0a4e1936425f9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1166,6 +1166,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1993879332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9afb1bde543821d40afd6fc5dde381e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 627c1f9dff5c5174994b89bf139baf6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winMenu: {fileID: 0}
+  gameOverMenu: {fileID: 0}

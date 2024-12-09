@@ -17,23 +17,17 @@ public class Enemy_Spider : MonoBehaviour
         {
 
             life -= 1;
-        }
-        else if (collision.gameObject.CompareTag("Player"))
-        {
-            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
-        }
+        }        
     }
 
     private void Update()
     {
         if(life <= 0)
         {
+            GetComponent<LootBag>().InstantiateLoot(transform.position);
             Destroy(gameObject);
         }
     }
+    
 
-    private void OnDestroy()
-    {
-        GetComponent<LootBag>().InstantiateLoot(transform.position);
-    }
 }

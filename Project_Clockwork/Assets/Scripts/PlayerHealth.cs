@@ -7,33 +7,51 @@ public class PlayerHealth : MonoBehaviour
 {
     public static event Action OnPlayerDamaged;
     public static event Action OnPlayerDeath;
-
+    public float damageCooldown = 3f;
     public float health, maxHealth;
+
+    public bool canTakeDamage = true;
+    private bool damageTaken = false;
 
     void Start()
     {
         health = maxHealth;        
     }
 
-    public void TakeDamage(float damage)
+    private void Update()
     {
-        health -= damage;
-        OnPlayerDamaged?.Invoke();
-
-        if (health <= 0)
+        Debug.Log("Can Be Damaged. . .");
+        if (damageTaken) 
         {
-            health = 0;
-            Debug.Log("You're Dead!");
-            OnPlayerDeath?.Invoke();
+            StartCoroutine(DamageCooldown());
         }
     }
 
-    public void Heal(float amount)
+    public void TakeDamage(float amount)
     {
-        health += amount;
-        if (health > maxHealth)
+        if(canTakeDamage)
         {
-            health = maxHealth;
+            health -= amount;
+            OnPlayerDamaged?.Invoke();
+            damageTaken = true;
+            Debug.Log("Damage Taken. . .");
         }
-    }    
+
+        if (health <= 0)
+        {            
+            health = 0;
+            Debug.Log("You're Dead!");
+            OnPlayerDeath?.Invoke();            
+        }
+    }
+
+    IEnumerator DamageCooldown()
+    {
+        Debug.Log("Damage Cooldown begins . . .");
+        canTakeDamage = false;
+        yield return new WaitForSeconds(damageCooldown);
+        canTakeDamage = true;
+        damageTaken = false;
+        Debug.Log("Damage Reset . . .");
+    }
 }

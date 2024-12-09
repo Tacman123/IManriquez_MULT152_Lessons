@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8903331449823706364}
   - component: {fileID: 7679589398618885238}
   - component: {fileID: 6370772650310047463}
-  - component: {fileID: 8698921982421122154}
+  - component: {fileID: 4349692781148075665}
   m_Layer: 0
   m_Name: New Game Object
   m_TagString: Untagged
@@ -454,7 +454,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 11
+  m_VersionIndex: 17
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -475,7 +475,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71223417013654308}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 1.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -483,7 +483,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &8698921982421122154
+--- !u!65 &4349692781148075665
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -508,7 +508,7 @@ GameObject:
   - component: {fileID: -3516814089438519593}
   m_Layer: 0
   m_Name: Destroyed Wall
-  m_TagString: Untagged
+  m_TagString: Debris
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -522,7 +522,7 @@ Transform:
   m_GameObject: {fileID: 1316872084381446021}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.51, y: 2, z: -31.83}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.255693, y: 0.69287205, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3793595427953021010}
@@ -550,7 +550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad74e6ac3276f464cbae376c4894bc14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 5
+  life: 2
 --- !u!1 &1808543952474532888
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 8899667873810396229}
   - component: {fileID: 3205420008862666216}
   - component: {fileID: 2527390801167982096}
-  - component: {fileID: 2476244102287590925}
+  - component: {fileID: 4114927495796769138}
   m_Layer: 0
   m_Name: New Game Object
   m_TagString: Untagged
@@ -1078,7 +1078,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 11
+  m_VersionIndex: 17
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1099,7 +1099,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808543952474532888}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 1.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1107,7 +1107,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &2476244102287590925
+--- !u!65 &4114927495796769138
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1133,7 +1133,7 @@ GameObject:
   - component: {fileID: 4204090925196805817}
   - component: {fileID: 9194417462541036326}
   - component: {fileID: 537950832081659553}
-  - component: {fileID: 2968964816119170426}
+  - component: {fileID: 3967523248720914975}
   m_Layer: 0
   m_Name: New Game Object
   m_TagString: Untagged
@@ -1580,7 +1580,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 11
+  m_VersionIndex: 17
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1601,7 +1601,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2408314965075459262}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 1.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1609,7 +1609,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &2968964816119170426
+--- !u!65 &3967523248720914975
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1635,7 +1635,7 @@ GameObject:
   - component: {fileID: 2085965728808167091}
   - component: {fileID: 6816215197590946030}
   - component: {fileID: 462708256027882518}
-  - component: {fileID: 1589977396458875762}
+  - component: {fileID: 8222754664075698594}
   m_Layer: 0
   m_Name: New Game Object
   m_TagString: Untagged
@@ -2329,7 +2329,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 11
+  m_VersionIndex: 17
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2350,7 +2350,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3171609363755669168}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 1.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2358,7 +2358,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1589977396458875762
+--- !u!65 &8222754664075698594
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2384,7 +2384,7 @@ GameObject:
   - component: {fileID: 6292113453918401633}
   - component: {fileID: 3023018038268274470}
   - component: {fileID: 6287336327196846119}
-  - component: {fileID: 4311535106435706919}
+  - component: {fileID: 9026261003398374820}
   m_Layer: 0
   m_Name: New Game Object
   m_TagString: Untagged
@@ -2831,7 +2831,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 11
+  m_VersionIndex: 17
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2852,7 +2852,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3614819435279559128}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 1.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2860,7 +2860,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &4311535106435706919
+--- !u!65 &9026261003398374820
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2886,7 +2886,7 @@ GameObject:
   - component: {fileID: 8687758054183569830}
   - component: {fileID: 5889721159080414120}
   - component: {fileID: 5501499041982356052}
-  - component: {fileID: 4287555883544830895}
+  - component: {fileID: 7174198467013111579}
   m_Layer: 0
   m_Name: New Game Object
   m_TagString: Untagged
@@ -3296,7 +3296,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 11
+  m_VersionIndex: 17
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3317,7 +3317,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3839576174870586768}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 1.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -3325,7 +3325,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &4287555883544830895
+--- !u!65 &7174198467013111579
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3351,7 +3351,7 @@ GameObject:
   - component: {fileID: 2448961554712031249}
   - component: {fileID: 2211467260842691725}
   - component: {fileID: 2936946983315668782}
-  - component: {fileID: 6185676834971825815}
+  - component: {fileID: 7770500659868397303}
   m_Layer: 0
   m_Name: New Game Object
   m_TagString: Untagged
@@ -3803,7 +3803,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 11
+  m_VersionIndex: 17
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3824,7 +3824,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4019952394891415379}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 1.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -3832,7 +3832,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6185676834971825815
+--- !u!65 &7770500659868397303
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3858,7 +3858,7 @@ GameObject:
   - component: {fileID: 3280468492845807747}
   - component: {fileID: 4997574529066997567}
   - component: {fileID: 7500877693598596431}
-  - component: {fileID: 2402497247508624808}
+  - component: {fileID: 7179207483365889072}
   m_Layer: 0
   m_Name: New Game Object
   m_TagString: Untagged
@@ -4278,7 +4278,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 11
+  m_VersionIndex: 17
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -4299,7 +4299,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6217671913494492823}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 1.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -4307,7 +4307,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &2402497247508624808
+--- !u!65 &7179207483365889072
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4333,7 +4333,7 @@ GameObject:
   - component: {fileID: 1365616579395913068}
   - component: {fileID: 8808647012873198469}
   - component: {fileID: 7510105727021541230}
-  - component: {fileID: 7605250322852457217}
+  - component: {fileID: 8354613095167389639}
   m_Layer: 0
   m_Name: New Game Object
   m_TagString: Untagged
@@ -4788,7 +4788,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 11
+  m_VersionIndex: 17
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -4809,7 +4809,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6836776603811517488}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 1.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -4817,7 +4817,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &7605250322852457217
+--- !u!65 &8354613095167389639
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4843,7 +4843,7 @@ GameObject:
   - component: {fileID: 1729484168481095956}
   - component: {fileID: 524689722318929398}
   - component: {fileID: 7129006964763221297}
-  - component: {fileID: 3570067294207520875}
+  - component: {fileID: 7466171491836938613}
   m_Layer: 0
   m_Name: New Game Object
   m_TagString: Untagged
@@ -5443,7 +5443,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 11
+  m_VersionIndex: 17
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -5464,7 +5464,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7466726521903641752}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 1.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -5472,7 +5472,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3570067294207520875
+--- !u!65 &7466171491836938613
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -16,5 +16,6 @@ public class ConversationTrigger : MonoBehaviour
                 ConversationManager.Instance.StartConversation(myConversation);
             }
         }
+        
     }
 }

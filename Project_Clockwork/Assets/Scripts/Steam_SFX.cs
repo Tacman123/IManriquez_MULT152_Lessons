@@ -5,6 +5,7 @@ using UnityEngine;
 public class Steam_SFX : MonoBehaviour
 {
     public AudioClip steamExpl;
+    public float life = 1f;
 
     private AudioSource steamGren;
 
@@ -13,6 +14,7 @@ public class Steam_SFX : MonoBehaviour
     {
         steamGren = GetComponent<AudioSource>();
         steamGren.PlayOneShot(steamExpl, 1.0f);
+        Destroy(gameObject, life);
     }
 
     

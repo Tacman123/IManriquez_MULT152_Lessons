@@ -14,7 +14,7 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.CompareTag("Enemy"))
+        if (!collision.collider.CompareTag("Player"))
         {
              // Destroy the projectile
             Destroy(gameObject);

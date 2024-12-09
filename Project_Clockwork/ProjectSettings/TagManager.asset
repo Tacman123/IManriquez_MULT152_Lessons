@@ -9,6 +9,8 @@ TagManager:
   - DestructibleWall
   - Movable
   - Projectile
+  - Debris
+  - TriggerObject
   layers:
   - Default
   - TransparentFX
